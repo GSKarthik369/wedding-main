@@ -1,1 +1,1 @@
-Deployed here: [https://pranav-weds-amrita.netlify.app/](https://pranav-weds-amrita.netlify.app/)
+Deployed here: [https://shilpa-weds-ajith.netlify.app/](https://shilpa-weds-ajith.netlify.app/)
