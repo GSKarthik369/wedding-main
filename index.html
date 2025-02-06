@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" style="overflow-x : hidden;width:100%;position:relative;">
+
+<head>
+   <link rel="shortcut icon" href="bride-weds-groom.png" type="image/png">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+   <meta name="author" content="Karthik">
+   <meta property="og:type" content="website" />
+   <meta property="og:title" content="" />
+   <meta property="og:url" content="" />
+   <meta property="og:site_name" content="" />
+   <meta name="twitter:card" content="website">
+   <meta name="twitter:site" content="">
+   <meta name="twitter:title" content="">
+
+   <title>Wedding Invitation</title>
+
+   <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Dancing+Script&amp;display=swap'>
+   <link rel="stylesheet" href="./css/style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+   <div class="background-container"></div>
+   <div class="parentContainer">
+      <div class="letter" id="letter">
+         <div class="sakura-falling"></div>
+         <img src="assets/design/top-right.png" alt="image-top-right" class="top-right-decoration">
+         <img src="assets/design/top-left.png" alt="image-top-left" class="top-left-decoration">
+         <div class="topImg">
+            <div class="image-cropper">
+               <img src="bride-weds-groom.png" class="image-cropper__image" />
+            </div>
+         </div>
+         <div class="wrap">
+            <div class="title m-b-0">
+               <h1 class="bride-name"></h1>
+               <h2>with</h2>
+               <h1 class="groom-name"></h1>
+               <!-- <h3>Are getting married</h3> -->
+               <h3>Are getting engaged</h3>
+               <p>
+                  on <span class="date"></span> <br /><br />
+                  At <span class="place"></span> <br /><br />
+                  <span class="time"></span>
+               </p>
+            </div>
+         </div>
+         <div class="venueParent">
+            <div class="actions">
+               <a href="https://maps.app.goo.gl/Tw96L8GJEYzPmheK6" class="venue-link" target="_blank">
+                  <div class="venue1">TAP HERE FOR VENUE</div>
+               </a>
+            </div>
+         </div>
+
+         <div class="timeParent">
+            <div id="time"></div>
+         </div>
+         <p class="dance-med">
+            Reception:
+         </p>
+         <p class="place1">
+            <!-- <span class="place1"> Sri Kalidas Convention Centre, Sri Kalidas M Plex,</span>
+            <br><br />
+            <span class="place1"> Thoongampara, Kattakada</span> -->
+            <!-- <br><br />
+            On <span class="date1">next day -->
+            <!-- <br><br />
+            On <span class="date1"> 31<sup>st</sup> August 2024
+            <br><br /> -->
+            <!-- From <span class="date1"> 04.30 P.M To 08.30 P.M -->
+            <span class="date1">
+               <div class="receptionParent">
+                  <div class="actions">
+                     <a href="https://maps.app.goo.gl/EgumgBFpuYCDaDbM7" class="engagement-link">
+                        <div class="venue">RECEPTION VENUE</div>
+                     </a>
+                     <!-- <a target="_blank" href="./invitation/invitation.pdf"
+                        download="">
+                        <div class="venue">DOWNLOAD INVITATION CARD</div>
+                     </a> -->
+                  </div>
+               </div>
+               <p class="footer">
+                  Can't wait to celebrate this auspicious moment with you! <br>
+                  Just a ping away for any queries:<br /><br />
+                  <b>
+                     <a href="https://api.whatsapp.com/send?phone=+919400693283&text=Hello%20Josun%20V%20Alex,%20We%20are%20joining%20your%20sister's%20wedding%20function&source=&data=" class="whatsapp-link" target="_blank">
+                        <i class="fa fa-whatsapp"></i>
+                        Josun V Alex
+                     </a>
+                  </b>
+               </p>
+               <p class="happiness">Join us in our happiness!</p>
+               <p class="footer">
+                  <span class="dance-med2"></span>
+               </p>
+               <div class="music">
+                  <audio src="./assets/mp3/music.mp3" id="my_audio" loop="loop" autoplay></audio>
+               </div>
+            </span>
+         </p>
+      </div>
+      <div class="cover" id="cover" onclick="animateOpen();">
+         <div class="coverTop" id="leftpanel">
+            <div>
+               <span class="coverTitle">
+                  Ajin V Alex
+                  <br/>weds<br/>
+                  Solomon K.R
+               </span>
+            </div>
+         </div>
+         <div class="coverBottom" id="rightpanel"></div>
+      </div>
+      <div class="openOverlay" id="opovrlay" onclick="animateOpen();">
+         <img src="assets/img/openimgg.png" width="100px" height="100px"><span class="open">Open</span>
+      </div>
+      <div class="siteError" id="siteError">
+         Site is unavailable
+      </div>
+   </div>
+   
+   <script src="./js/env.js"></script>
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+   <script src='https://cdn.jsdelivr.net/gh/timoschaefer/jQuery-Sakura/jquery-sakura.min.js'></script>
+   <script src="./js/script.js"></script>
+</body>
+</html>
