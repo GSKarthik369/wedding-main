@@ -1,14 +1,14 @@
 const env = {
-    brideName: "Ajin V Alex",
-    groomName: "Solomon K.R",
+    brideName: "Vidyalekshmi M S",
+    groomName: "Akhilchandran B S",
     type: "Wedding",
-    weddingDate: "17th February 2025",
-    venue: "St. Mary's Malankara Syriac Catholic Church, Mylom East",
-    time: "11:00 A.M.",
+    weddingDate: "09th May 2025",
+    venue: "Kairali Audiotorium, Kottamam, Trivandrum",
+    time: "10:00 A.M. and 10:30 A.M.",
     eventType: "are getting married",
-    bestCompliments: "Best Compliments from Josun V Alex and Vadakkethalackal Family",
-    invitationDownload: "Invitation | 17 February | Hope to see you there!",
-    // whatsappURL: "https://api.whatsapp.com/send?phone=+919400693283&text=Hello%20Josun%20V%20Alex,%20We%20are%20joining%20your%20sister's%20wedding%20function&source=&data="
+    bestCompliments: "Best Compliments from Vipin M S, Geethu G S, Samvrudhi G Vipin, Kith and Kin",
+    invitationDownload: "Invitation | 09 May | Hope to see you there!",
+    // whatsappURL: "https://api.whatsapp.com/send?phone=+919895590781&text=Hello%20,%20We%20are%20joining%20your%20daughter's%20wedding%20function&source=&data="
 };
 
 document.addEventListener("DOMContentLoaded", function () {
