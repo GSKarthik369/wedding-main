@@ -1,1 +1,25 @@
-window.ENV = {};
+window.ENV = {
+  "APP_TITLE": "Wedding Invitation",
+  "AUTHOR_NAME": "Karthik",
+  "OG_TITLE": "Wedding Invitation | Renjith weds Arya | 17th August 2025 | Sree Muruga Auditorium, Kunnursala, Kanchani",
+  "META_TITLE": "Wedding Invitation | Renjith weds Arya | 17th August 2025 | Sree Muruga Auditorium, Kunnursala, Kanchani",
+  "META_DESCRIPTION": "Join us for the wedding of Renjith and Arya on 17th August 2025 at Sree Muruga Auditorium, Kunnursala, Kanchani.",
+  "OG_URL": "https://wedding-website.com",
+  "OG_SITE_NAME": "wedding-website",
+  "FAVICON_PATH": "bride-weds-groom.png",
+  "TOP_RIGHT_IMG": "assets/design/top-right.png",
+  "TOP_LEFT_IMG": "assets/design/top-left.png",
+  "BRIDE_GROOM_IMG": "bride-weds-groom.png",
+  "INVITATION_PDF": "./invitation/invitation.pdf",
+  "MUSIC_FILE": "./assets/mp3/music2.mp3",
+  "VENUE_MAP_URL": "https://www.google.com/maps/dir//HX5V%2B2F7,+Kunnoorsala,+Kachani,+Thiruvananthapuram,+Kerala+695564/@8.5575287,76.9112635,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3b05b9c5dce2e89b:0xeb623d695fbcc80f!2m2!1d76.9936654!2d8.5575374?entry=ttu&g_ep=EgoyMDI1MDgxMi4wIKXMDSoASAFQAw%3D%3D1308198!2d8.3706051?entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoASAFQAw%3D%3D",
+  "WHATSAPP_LINK": "https://api.whatsapp.com/send?phone=+918907674530&text=Hello%20,%20We%20are%20joining%20your%20wedding%20function&source=&data=",
+  "BRIDE_NAME": "Renjith",
+  "GROOM_NAME": "Arya",
+  "EVENT_TYPE": "Are getting married",
+  "EVENT_DATE": "17th August 2025",
+  "EVENT_PLACE": "Sree Muruga Auditorium, Kunnursala, Kachani",
+  "EVENT_TIME": "11.45 AM to 12.15 PM",
+  "WHATSAPP_TEXT": "Renjith",
+  "FOOTER_WISHES": "Best wishes from Adwitha R.V, Akshith R.V & family"
+};
