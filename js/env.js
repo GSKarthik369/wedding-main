@@ -52,6 +52,8 @@ window.ENV = {
   "APP_TITLE": "Wedding Invitation",
   "AUTHOR_NAME": "Karthik",
   "OG_TITLE": "Wedding Invitation | Renjith weds Arya | 17th August 2025 | Sree Muruga Auditorium, Kunnursala, Kanchani",
+  "META_TITLE": "Wedding Invitation | Renjith weds Arya | 17th August 2025 | Sree Muruga Auditorium, Kunnursala, Kanchani",
+  "META_DESCRIPTION": "Join us for the wedding of Renjith and Arya on 17th August 2025 at Sree Muruga Auditorium, Kunnursala, Kanchani.",
   "OG_URL": "https://wedding-website.com",
   "OG_SITE_NAME": "wedding-website",
   "FAVICON_PATH": "bride-weds-groom.png",
