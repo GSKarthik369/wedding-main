@@ -2,41 +2,44 @@
 require('dotenv').config();
 const fs = require('fs');
 
-// 1. Update index.html meta tags and title
 let html = fs.readFileSync('./index.html', 'utf-8');
 
-// Replace <meta name="description" ...>
-html = html.replace(
-  /<meta name="description" content=".*">/,
-  `<meta name="description" content="${process.env.APP_TITLE || ''}">`
-);
+// Replace meta tags dynamically
+html = html.replace(/(<meta name="description"[^>]*content=").*?(")/,
+  `$1${process.env.META_DESCRIPTION}$2`);
 
-// Replace <title> ... </title>
-html = html.replace(
-  /<title>.*<\/title>/,
-  `<title>${process.env.META_TITLE || ''}</title>`
-);
+html = html.replace(/(<title[^>]*>).*?(<\/title>)/,
+  `$1${process.env.META_TITLE}$2`);
 
-// Optionally add Open Graph tags for WhatsApp/Facebook preview
-if (!html.includes('og:title')) {
-  const ogTags = `
-<meta property="og:title" content="${process.env.META_TITLE || ''}" />
-<meta property="og:description" content="${process.env.APP_TITLE || ''}" />
-<meta property="og:image" content="${process.env.OG_IMAGE || ''}" />
-<meta property="og:url" content="${process.env.OG_URL || ''}" />
-<meta property="og:type" content="website" />
-  `;
-  html = html.replace('</head>', `${ogTags}\n</head>`);
-}
+// Open Graph
+html = html.replace(/(<meta property="og:title"[^>]*content=").*?(")/,
+  `$1${process.env.META_TITLE}$2`);
+html = html.replace(/(<meta property="og:description"[^>]*content=").*?(")/,
+  `$1${process.env.META_DESCRIPTION}$2`);
+html = html.replace(/(<meta property="og:url"[^>]*content=").*?(")/,
+  `$1${process.env.OG_URL}$2`);
+html = html.replace(/(<meta property="og:site_name"[^>]*content=").*?(")/,
+  `$1${process.env.OG_SITE_NAME}$2`);
+html = html.replace(/(<meta property="og:image"[^>]*content=").*?(")/,
+  `$1${process.env.OG_IMAGE}$2`);
 
-// Save updated HTML
-fs.writeFileSync('./index.html', html, 'utf-8');
+// Twitter
+html = html.replace(/(<meta name="twitter:site"[^>]*content=").*?(")/,
+  `$1${process.env.TWITTER_SITE}$2`);
+html = html.replace(/(<meta name="twitter:title"[^>]*content=").*?(")/,
+  `$1${process.env.TWITTER_TITLE}$2`);
+html = html.replace(/(<meta name="twitter:description"[^>]*content=").*?(")/,
+  `$1${process.env.TWITTER_DESCRIPTION}$2`);
+html = html.replace(/(<meta name="twitter:image"[^>]*content=").*?(")/,
+  `$1${process.env.TWITTER_IMAGE}$2`);
 
-// 2. Generate env.js so frontend JS can access variables
+// Write updated HTML
+fs.writeFileSync('./index.html', html);
+
+// Create env.js for browser
 fs.writeFileSync(
   './js/env.js',
-  `window.ENV = ${JSON.stringify(process.env, null, 2)};`,
-  'utf-8'
+  `window.ENV = ${JSON.stringify(process.env, null, 2)};`
 );
 
-console.log('Environment variables injected into index.html and js/env.js');
+console.log('✅ Meta tags and env.js updated successfully.');
