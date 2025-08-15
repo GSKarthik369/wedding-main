@@ -1,0 +1,24 @@
+{
+  "name": "wedding-main",
+  "version": "1.0.0",
+  "description": "wedding application",
+  "main": "index.js",
+  "scripts": {
+    "build": "node generate-env.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GSKarthik369/wedding-main.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GSKarthik369/wedding-main/issues"
+  },
+  "homepage": "https://github.com/GSKarthik369/wedding-main#readme",
+  "dependencies": {
+    "dotenv": "^17.2.1"
+  }
+}

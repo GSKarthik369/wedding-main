@@ -8,7 +8,7 @@
 
 
 $(document).on('click', function(){
-    document.getElementById("my_audio").play();
+    document.getElementById("weddingMusic").play();
 });
 
 var siteCondition = true;
